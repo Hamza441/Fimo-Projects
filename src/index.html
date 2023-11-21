@@ -8,12 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <section class="header">
         <nav>
+
           <a href="index.html"><img src="images/logo2.png" ></a>
-           <div class=" nav-links">
+           <div class=" nav-links" id = "navLinks">
+               <i class="fa fa-close" onclick="hideMenu()"></i>
+
+
                 <ul>
                         <li> <a href="">HOME </a></li>
                         <li> <a href="">ABOUT </a></li>
@@ -22,17 +28,21 @@
                         <li> <a href="">CONTACT </a></li>
                 </ul>
            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
         </nav>
      <div class = "text-box">
          <h1> Foundation for Immigrant and Minority Opportunities (FIMO)</h1>
          <p>
              Vision:
-             FIMO envisions a future where every child, regardless of their background, has the opportunity<br>
-             to excel in their education and in life, becoming active, engaged members of their community.<br>
-             We aim to provide comprehensive support from kindergarten through college,<br>
-             including homework assistance, enriching activities, inspiring field trips, invigorating<br>
-             hiking experiences, and unwavering youth support. Our commitment extends to empowering<br>
-             immigrant and minority communities by facilitating their path to U.S. citizenship, aiding in<br>
+             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+             when an unknown printer took a galley of type and scrambled it to make a type
+             specimen book. It has survived not only five centuries, but also the leap into el,<br>
+             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+             when an unknown printer took a galley of type and scrambled it to make a type
+             specimen book. It has survived not only five centuries, but also the leap into el in<br>
              job applications, simplifying the tax return process, and coaching and mentoring on college life<br>
              and success.
          </p>
@@ -41,6 +51,83 @@
 
     </section>
 
+    <!------- Info--------------------------------------------->
+
+<section class ="info">
+    <h1>FIMO</h1>
+    <p>Lorema ipsum dolar sit amet, consectetor adipicising elit </p>
+
+    <div class ="row">
+        <div class = "course-col">
+            <h3>Objectives</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type
+                specimen book. It has survived not only five centuries, but also the leap into electronic.</p>
+        </div>
+
+        <div class = "course-col">
+        <h3>Mission</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type
+            specimen book. It has survived not only five centuries, but also the leap into electronic.</p>
+        </div>
+
+        <div class = "course-col">
+        <h3>Vission</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type
+            specimen book. It has survived not only five centuries, but also the leap into electronic.</p>
+         </div>
+
+</section>
+
+        <!------- Campus--------------------------------------------->
+
+
+
+<section class = "campus">
+    <h1>Our Global Campus</h1>
+    <p>Lorema ipsum dolar sit amet, consectetor adipicising elit </p>
+
+    <div class = "row">
+        <div class="campus-col">
+            <img src="images/seattle2.avif">
+            <div class ="layer">
+                <h3>SEATTLE</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/seattle2.avif">
+            <div class ="layer">
+                <h3>Tukwila</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/seattle3.webp">
+            <div class ="layer">
+                <h3>SEATAC</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!------- JavaScript for Toggle Menu---->
+    <script>
+         var navLinks = document.getElementById("navLinks");
+
+         function showMenu(){
+             navLinks.style.right = "0";
+         }
+         function hideMenu(){
+             navLinks.style.right = "-200px";
+         }
+
+    </script>
 
 
 </body>
